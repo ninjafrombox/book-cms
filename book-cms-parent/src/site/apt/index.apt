@@ -17,3 +17,10 @@
 
  []
  
+ <<Репозиторий>>
+
+ https://github.com/ninjafrombox/book-cms
+
+ <<Maven module>>
+
+ {{{https://github.com/ninjafrombox/book-cms/archive/maven.zip}Module artifact}}
