@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Book CMS">
+  <publishDate position="left" format="HH:mm dd.MM.yy" />
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-stylus-skin</artifactId>
+    <version>1.5</version>
+  </skin>
+  <body>
+    <menu name="Book CMS Project">
+      <item name="Общие сведения" href="index.html" />
+    </menu>
+    <menu ref="modules" />
+    <menu ref="reports" />
+  </body>
+</project>
