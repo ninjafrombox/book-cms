@@ -1,0 +1,4 @@
+com.samara.mentoring.bookcms.config
+com.samara.mentoring.bookcms.dao
+com.samara.mentoring.bookcms.domain
+com.samara.mentoring.bookcms.service

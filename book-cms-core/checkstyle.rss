@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Book CMS :: Core - Checkstyle report</title>
+    <link>http://ninjafrombox.github.io/book-cms/book-cms-core</link>
+    <description>Book CMS :: Core - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013</copyright>
+    <item>
+      <title>File: 7,
+             Errors: 78,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.service.BookServiceImpl.java">com/samara/mentoring/bookcms/service/BookServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.service.BookService.java">com/samara/mentoring/bookcms/service/BookService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.dao.BookDao.java">com/samara/mentoring/bookcms/dao/BookDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.domain.Author.java">com/samara/mentoring/bookcms/domain/Author.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  38
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.config.CoreConfig.java">com/samara/mentoring/bookcms/config/CoreConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.domain.Book.java">com/samara/mentoring/bookcms/domain/Book.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ninjafrombox.github.io/book-cms/book-cms-core/checkstyle.html#com.samara.mentoring.bookcms.dao.BookDaoImpl.java">com/samara/mentoring/bookcms/dao/BookDaoImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
