@@ -1,0 +1,8 @@
+#!/usr/bin/env groovy
+
+def msg = new File(args[0]).text.trim()
+if (!(msg ==~ /\[[a-zA-Z]+\] .+/)) {
+  System.err.println "Expected message format: [<module name - letters only>] some text"
+  System.exit 1
+}
+System.exit 0
