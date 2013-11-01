@@ -19,8 +19,12 @@
  
  <<Репозиторий>>
 
- https://github.com/ninjafrombox/book-cms
+ {{https://github.com/ninjafrombox/book-cms}}
 
  <<Maven module>>
 
  {{{https://github.com/ninjafrombox/book-cms/archive/maven.zip}Module artifact}}
+
+ {{{http://dl.bintray.com/ninjafrombox/repo}Maven repository}}
+
+ {{{http://nexus-ninjafrombox.rhcloud.com/nexus}Nexus}}
