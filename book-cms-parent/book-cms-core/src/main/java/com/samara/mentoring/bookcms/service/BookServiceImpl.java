@@ -15,4 +15,9 @@ public class BookServiceImpl implements BookService {
     public Collection<Book> getBooksByAuthor(Author author) {
         return bookDao.getBooksByAuthor(author);
     }
+
+    @Override
+    public Collection<Book> getBooksByTitle(String title) {
+        return bookDao.getBooksByTitle(title);
+    }
 }

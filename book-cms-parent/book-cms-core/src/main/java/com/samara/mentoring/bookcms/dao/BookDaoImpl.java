@@ -10,4 +10,9 @@ public class BookDaoImpl implements BookDao {
     public Collection<Book> getBooksByAuthor(Author author) {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public Collection<Book> getBooksByTitle(String title) {
+        throw new UnsupportedOperationException();
+    }
 }
