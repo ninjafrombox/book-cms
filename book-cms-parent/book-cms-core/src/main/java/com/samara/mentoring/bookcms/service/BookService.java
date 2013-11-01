@@ -13,4 +13,9 @@ public interface BookService {
      * Get all books by its author
      */
     Collection<Book> getBooksByAuthor(Author author);
+
+    /**
+     * Get all books by its title
+     */
+    Collection<Book> getBooksByTitle(String title);
 }
