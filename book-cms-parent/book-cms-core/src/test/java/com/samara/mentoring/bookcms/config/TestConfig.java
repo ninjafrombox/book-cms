@@ -24,6 +24,15 @@ public class TestConfig {
         return new BookDao() {
             @Override
             public Collection<Book> getBooksByAuthor(Author author) {
+                return getBooks();
+            }
+
+            @Override
+            public Collection<Book> getBooksByTitle(String title) {
+                return getBooks();
+            }
+
+            private Collection<Book> getBooks() {
                 Book book = new Book();
                 book.setTitle(MOCK_BOOK_TITLE);
                 Author author1 = new Author();
