@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Spring beans configuration
+ * Cosmetic commit
  */
 @Configuration
 public class CoreConfig {
