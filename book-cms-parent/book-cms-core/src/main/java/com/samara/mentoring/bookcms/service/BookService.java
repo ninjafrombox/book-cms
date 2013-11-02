@@ -8,6 +8,7 @@ import java.util.Collection;
 /**
  * Operations with books
  * First commit for main feature
+ * Second commit for main feature
  */
 public interface BookService {
     /**
