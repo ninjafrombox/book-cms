@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.samara.mentoring</groupId>
     <artifactId>book-cms-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1</version>
   </parent>
 
 </project>
