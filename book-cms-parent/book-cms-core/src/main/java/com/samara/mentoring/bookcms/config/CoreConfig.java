@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Spring beans configuration
  * Cosmetic commit
- * Cosmetic commit for next release
  */
 @Configuration
 public class CoreConfig {
