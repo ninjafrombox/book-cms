@@ -32,3 +32,7 @@
  {{{http://dl.bintray.com/ninjafrombox/repo}Maven repository}}
 
  {{{http://nexus-ninjafrombox.rhcloud.com/nexus}Nexus}}
+
+ <<Git module>>
+ 
+ {{{https://github.com/ninjafrombox/book-cms/archive/git.zip}Module artifact}}
