@@ -2,6 +2,8 @@ package com.samara.mentoring.bookcms.domain;
 
 /**
  * Contains info about book author
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 public class Author {
     private String firstName;
