@@ -16,6 +16,8 @@ import static org.junit.Assert.*;
 
 /**
  * Try overriding beans in test context
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { CoreConfig.class, TestConfig.class } )
