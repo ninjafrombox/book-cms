@@ -7,6 +7,8 @@ import java.util.Set;
 
 /**
  * Contains info about book
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 public class Book {
     private String title;
