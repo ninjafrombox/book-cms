@@ -7,6 +7,8 @@ import java.util.Collection;
 
 /**
  * Access to book storage
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 public interface BookDao {
     /**
