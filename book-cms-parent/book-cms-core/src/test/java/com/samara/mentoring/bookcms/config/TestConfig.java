@@ -12,6 +12,8 @@ import java.util.Collection;
 
 /**
  * Spring beans configuration for test purpose
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 @Configuration
 public class TestConfig {
