@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Spring beans configuration
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 @Configuration
 public class CoreConfig {
