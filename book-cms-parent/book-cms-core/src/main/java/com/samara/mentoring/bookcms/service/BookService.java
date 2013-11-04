@@ -7,6 +7,8 @@ import java.util.Collection;
 
 /**
  * Operations with books
+ *
+ * @author ninjafrombox@users.noreply.github.com
  */
 public interface BookService {
     /**
