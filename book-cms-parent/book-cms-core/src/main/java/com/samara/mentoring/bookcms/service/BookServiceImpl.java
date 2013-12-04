@@ -3,12 +3,11 @@ package com.samara.mentoring.bookcms.service;
 import com.samara.mentoring.bookcms.dao.BookDao;
 import com.samara.mentoring.bookcms.domain.Author;
 import com.samara.mentoring.bookcms.domain.Book;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.Collection;
+import javax.inject.Inject;
 
 public class BookServiceImpl implements BookService {
-    @Autowired
+    @Inject
     private BookDao bookDao;
 
     @Override

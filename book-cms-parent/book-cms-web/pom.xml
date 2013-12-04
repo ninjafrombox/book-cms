@@ -12,4 +12,47 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
+  <properties>
+    <jboss-as.port>8999</jboss-as.port>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.samara.mentoring</groupId>
+      <artifactId>book-cms-core</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.servlet</groupId>
+      <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>jboss-deploy</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jboss.as.plugins</groupId>
+            <artifactId>jboss-as-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>deploy</goal>
+                </goals>
+                <phase>package</phase>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
