@@ -13,7 +13,11 @@
   </parent>
 
   <properties>
+    <version.maven.war.plugin>2.4</version.maven.war.plugin>
+    <version.jboss.maven.plugin>7.5.Final</version.jboss.maven.plugin>
+    <jboss-as.hostname>localhost</jboss-as.hostname>
     <jboss-as.port>8999</jboss-as.port>
+    <jboss-as.id>jboss-as</jboss-as.id>
   </properties>
 
   <dependencies>
@@ -33,6 +37,27 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+    <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>${version.maven.war.plugin}</version>
+          <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.jboss.as.plugins</groupId>
+          <artifactId>jboss-as-maven-plugin</artifactId>
+          <version>${version.jboss.maven.plugin}</version>
+          <configuration>
+            <name>book-cms.war</name>
+          </configuration>
+        </plugin>
+    </plugins>
+  </build>
 
   <profiles>
     <profile>
