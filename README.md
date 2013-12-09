@@ -27,3 +27,11 @@ JBoss module
     * /subsystem=datasources/data-source=ExampleDS:add(connection-url="jdbc:sqlite:${jboss.server.base.dir}/exampleDS.db",jndi-name="java:jboss/datasources/ExampleDS",driver-name="sqlite")
  * test datasource
     * /subsystem=datasources/data-source=ExampleDS:test-connection-in-pool
+1. Deploy to JBoss manually. There are several ways:
+ * file system deployment - copy war to standalone/deployments folder
+ * deployment using CLI - deploy "c:\mentoring\book-cms-parent\book-cms-web\target\book-cms.war"
+ * deployment using web console - "Runtime" tab, "Manage Deployments" menu, "Add content" button
+1. Configure maven to deploy to JBoss (with security)
+ * add jboss-as maven plugin (org.jboss.as.plugins:jboss-as-maven-plugin:7.5.Final) to build/plugins section
+ * set "jboss-as.hostname", "jboss-as.port", "jboss-as.id" properties, configure "jboss-as" server in settings.xml
+ * add "jboss-deploy" profile for war deployment at package phase
