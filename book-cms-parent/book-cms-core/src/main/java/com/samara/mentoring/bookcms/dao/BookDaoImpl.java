@@ -7,6 +7,11 @@ import java.util.Collection;
 
 public class BookDaoImpl implements BookDao {
     @Override
+    public Collection<Book> getAllBooks() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public Collection<Book> getBooksByAuthor(Author author) {
         throw new UnsupportedOperationException();
     }

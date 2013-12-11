@@ -12,6 +12,7 @@ import java.util.Set;
  */
 public class Book {
     private String title;
+    private String genre;
     private Set<Author> authors = new HashSet<Author>();
 
     public String getTitle() {
@@ -20,6 +21,13 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     public Collection<Author> getAuthors() {

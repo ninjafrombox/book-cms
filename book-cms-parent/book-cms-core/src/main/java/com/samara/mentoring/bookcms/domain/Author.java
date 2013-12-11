@@ -1,5 +1,7 @@
 package com.samara.mentoring.bookcms.domain;
 
+import java.util.Date;
+
 /**
  * Contains info about book author
  *
@@ -9,6 +11,7 @@ public class Author {
     private String firstName;
     private String lastName;
     private String middleName;
+    private Date birthDate;
 
     public String getFirstName() {
         return firstName;
@@ -34,15 +37,22 @@ public class Author {
         this.middleName = middleName;
     }
 
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Author &&
-            (firstName == null ? ((Author) obj).getFirstName() == null :
-                firstName.equals(((Author) obj).getFirstName()))
-            && (lastName == null ? ((Author) obj).getLastName()== null :
-                lastName.equals(((Author) obj).getLastName()))
-            && (middleName == null ? ((Author) obj).getMiddleName()== null :
-                middleName.equals(((Author) obj).getMiddleName()));
+        if(!(obj instanceof Author)) return false;
+        Author author = (Author)obj;
+        return (firstName == null ? author.firstName == null : firstName.equals(author.firstName))
+            && (lastName == null ? author.lastName == null : lastName.equals(author.lastName))
+            && (middleName == null ? author.middleName == null : middleName.equals(author.middleName))
+            && (birthDate == null ? author.birthDate == null : birthDate.equals(author.birthDate));
     }
 
     @Override

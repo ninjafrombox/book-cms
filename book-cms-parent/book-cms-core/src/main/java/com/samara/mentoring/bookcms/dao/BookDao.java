@@ -12,6 +12,11 @@ import java.util.Collection;
  */
 public interface BookDao {
     /**
+     * Get all books
+     */
+    Collection<Book> getAllBooks();
+
+    /**
      * Get all books by its author
      */
     Collection<Book> getBooksByAuthor(Author author);
