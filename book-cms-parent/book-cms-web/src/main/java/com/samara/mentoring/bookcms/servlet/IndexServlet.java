@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.samara.mentoring.bookcms.ejb.AsyncTask;
 import com.samara.mentoring.bookcms.ejb.Timer;
+import com.samara.mentoring.bookcms.service.BookService;
 
 /**
  * Servlet for start page
@@ -29,6 +30,8 @@ public class IndexServlet extends HttpServlet {
     private Timer timerBean;
     @Inject
     private AsyncTask asyncBean;
+    @Inject
+    private BookService bookService;
     
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -48,6 +51,7 @@ public class IndexServlet extends HttpServlet {
         if (result.isDone()) try { info = result.get(); } catch (Exception e) { }
         req.setAttribute("info", info);
         req.setAttribute("lifeTime", timerBean.getLifeTime());
+        req.setAttribute("books", bookService.getAllBooks());
         RequestDispatcher resultView = req.getRequestDispatcher("hello.jsp");
         resultView.forward(req, resp);
     }

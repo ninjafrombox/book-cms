@@ -35,3 +35,9 @@ JBoss module
  * add jboss-as maven plugin (org.jboss.as.plugins:jboss-as-maven-plugin:7.5.Final) to build/plugins section
  * set "jboss-as.hostname", "jboss-as.port", "jboss-as.id" properties, configure "jboss-as" server in settings.xml
  * add "jboss-deploy" profile for war deployment at package phase
+1. Creating some enterprise features
+ * book-cms-core: CDI, Common Annotations API for JNDI lookup (@Resource)
+ * book-cms-web: CDI, Servlet, JSP & JSTL
+1. Schedulers, Working with threads
+ * book-cms-web: use @Schedule and @Asynchronous annotations for EJB
+ 
