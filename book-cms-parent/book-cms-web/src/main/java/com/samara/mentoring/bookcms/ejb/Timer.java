@@ -16,7 +16,7 @@ public class Timer {
         return lifeTime;
     }
 
-    @Schedule(second="*/60", minute="*", hour="*")
+    @Schedule(second="0", minute="*", hour="*")
     public void doWork() {
         lifeTime++;
     }
