@@ -7,6 +7,7 @@ JBoss module
     * uncomment line after "Sample JPDA settings for remote socket debugging", change port for remote debug
  * change default ports in standalone/configuration/standalone.xml file:
     * change value of "port" attribute for "socket-binding" elements (e.g. http and management-native)
+	* change inet-addresses in "interfaces" section or set corresponding properties (e.g. "jboss.bind.address", "jboss.bind.address.management")
 1. Configure digit security (LDAP based) in standalone/configuration/standalone.xml file:
  * set up "security-realm" for management:
     * insert &lt;ldap connection="ldap" base-dn="OU=UsersSamara,DC=samara,DC=changeme,DC=com">&lt;username-filter attribute="sAMAccountName"/>&lt;/ldap> inside "authentication" element
@@ -17,6 +18,7 @@ JBoss module
     * use configured security domain name in application (jboss-web.xml)
 1. Configuring SQLite JDBC DataSources
  * create "org.xerial.sqlite-jdbc" module
+    * get "sqlite-jdbc" artifact using mvn -f get-sqlite-jdbc.xml dependency:copy-dependencies
     * create folder modules/org/xerial/sqlite-jdbc/main, copy sqlite-jdbc-3.7.15-M1.jar to it
     * create module.xml (see com.h2database.h2 as example)
  * add jdbc-driver
@@ -40,4 +42,26 @@ JBoss module
  * book-cms-web: CDI, Servlet, JSP & JSTL
 1. Schedulers, Working with threads
  * book-cms-web: use @Schedule and @Asynchronous annotations for EJB
- 
+1. Monitoring JBoss
+ * JMX: use jconsole to connect - service:jmx:remoting-jmx://&lt;host>:&lt;port>
+ * native management interface: e.g. cli - :read-resource(include-runtime=true) operation
+1. Domain setup
+ * configure domain controller (domain.xml)
+    * define profiles
+    * define socket binding groups
+    * define server groups (profile + socket binding group + JVM options)
+ * configure master host controller (host.xml)
+    * define interfaces
+    * set "domain-controller" as "local"
+ * configure host controllers (host.xml)
+    * define interfaces
+    * set "domain-controller" as "remote"
+    * set "server-identities" element inside "security-realm"
+    * define servers
+1. Using shared libraries
+ * share library between deployments
+    * put library to modules folder and create module.xml or deploy it
+    * resolve dependencies using manifest or jboss-deployment-structure.xml
+ * share library between EAR modules
+    * put library to EAR/lib folder or to EAR root if "ear-subdeployments-isolated" is false
+    * resolve dependencies using manifest or jboss-deployment-structure.xml
