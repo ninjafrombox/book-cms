@@ -43,6 +43,16 @@
       </activation>
       <repositories>
         <repository>
+          <id>default</id>
+          <url>http://repo.maven.apache.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
           <id>bintray</id>
           <url>http://dl.bintray.com/ninjafrombox/repo/</url>
           <releases>
@@ -64,6 +74,16 @@
         </repository>
       </repositories>
       <pluginRepositories>
+        <pluginRepository>
+          <id>default</id>
+          <url>http://dl.bintray.com/ninjafrombox/repo/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
         <pluginRepository>
           <id>bintray</id>
           <url>http://dl.bintray.com/ninjafrombox/repo/</url>
