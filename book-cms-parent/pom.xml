@@ -39,7 +39,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <version.jdk>1.6</version.jdk>
     <version.maven.compiler.plugin>3.1</version.maven.compiler.plugin>
-    <version.maven.resources.plugin>2.6</version.maven.resources.plugin>
+    <version.maven.surefire.plugin>2.16</version.maven.surefire.plugin>
+    <version.maven.failsafe.plugin>2.16</version.maven.failsafe.plugin>
     <version.maven.site.plugin>3.3</version.maven.site.plugin>
     <version.jboss.spec.javaee.6.0>3.0.2.Final</version.jboss.spec.javaee.6.0>
     <version.maven.project.info.reports.plugin>2.7</version.maven.project.info.reports.plugin>
@@ -87,6 +88,29 @@
           <configuration>
             <source>${version.jdk}</source>
             <target>${version.jdk}</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${version.maven.surefire.plugin}</version>
+          <configuration>
+            <includes>
+              <include>**/*UnitTest.java</include>
+            </includes>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${version.maven.failsafe.plugin}</version>
+          <configuration>
+            <includes>
+              <include>**/*Test.java</include>
+            </includes>
+            <excludes>
+              <exclude>**/*UnitTest.java</exclude>
+            </excludes>
           </configuration>
         </plugin>
         <plugin>
