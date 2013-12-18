@@ -76,7 +76,7 @@
       <pluginRepositories>
         <pluginRepository>
           <id>default</id>
-          <url>http://dl.bintray.com/ninjafrombox/repo/</url>
+          <url>http://repo.maven.apache.org/maven2</url>
           <releases>
             <enabled>true</enabled>
           </releases>
