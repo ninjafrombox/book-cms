@@ -33,7 +33,7 @@ Jenkins module
 1. Configure deploy project on JBoss
  * deployment to JBoss is configured in 'jboss-deploy' profile (book-cms-parent/book-cms-web/pom.xml)
  * add maven build step - 'Invoke top-level Maven targets', goal clean package -Pjboss-deploy
- * specify jboss management username and password, pass to maven as 'jboss-as.username', 'jboss-as.password' properties
+ * specify jboss management username and password, pass it to maven as 'jboss-as.username', 'jboss-as.password' properties
 
 1. Configure parameterized build to run job on selected slave
  * install 'NodeLabel Parameter Plugin'
@@ -52,3 +52,18 @@ Jenkins module
 1. Try Groovy Scripting Plugin
  * install 'Groovy plugin'
  * add groovy build step - 'Execute system Groovy script'
+
+List of additional plugins
+* analysis-core 1.54
+* checkstyle 3.38
+* cobertura 1.9.3
+* findbugs 4.51
+* git 2.0
+* git-client 1.6.0
+* groovy 1.14
+* jquery 1.7.2-1
+* locale 1.2
+* nodelabelparameter 1.4
+* scm-api 0.2
+* token-macro 1.9
+* xunit 1.67
