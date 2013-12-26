@@ -13,3 +13,4 @@ Testing module
 
 1. Write tests using JMockit - see BookServiceJmockitUnitTest
 
+1. Code coverage reports using cobertura was created in previous module (Jenkins)
